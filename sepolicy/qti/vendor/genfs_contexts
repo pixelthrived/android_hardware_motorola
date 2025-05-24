@@ -77,7 +77,8 @@ genfscon proc /sys/kernel/sched_lib_name          u:object_r:proc_sched_lib_mask
 
 # Touchscreen
 genfscon sysfs /class/touchscreen                                                      u:object_r:vendor_sysfs_touchpanel:s0
-genfscon sysfs /devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen    u:object_r:vendor_sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0                u:object_r:vendor_sysfs_touchpanel:s0
+genfscon sysfs /devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.1                u:object_r:vendor_sysfs_touchpanel:s0
 genfscon sysfs /devices/platform/soc/4a88000.i2c/i2c-2/2-0038/touchscreen              u:object_r:vendor_sysfs_touchpanel:s0
 genfscon sysfs /devices/platform/soc/4a88000.spi/spi_master/spi0/spi0.0/touchscreen    u:object_r:vendor_sysfs_touchpanel:s0
 genfscon sysfs /devices/platform/soc/880000.spi/spi_master/spi0/spi0.0/touchscreen     u:object_r:vendor_sysfs_touchpanel:s0
@@ -169,4 +170,5 @@ genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qco
 genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/power_supply/usb/power/wakeup                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input2/wakeup                                                                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/input/input5/wakeup                                                                                                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input7/wakeup                                                                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/focaltech_fp/wakeup                                                                                                      u:object_r:sysfs_wakeup:s0
